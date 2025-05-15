@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "../MAMP/htdocs"
+		},
+		{
+			"path": "../xampp/htdocs/PHP"
+		}
+	],
+	"settings": {}
+}
