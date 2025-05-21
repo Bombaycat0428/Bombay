@@ -67,6 +67,17 @@ main{
     width:95%;
     margin:50px auto;
 }
+/*カルーセル*/
+.slide-items {
+  width: 100%;
+  height: 100%;
+}
+
+.slide-items img {
+  width: 100%;
+  object-fit: cover;
+}
+
 .mk_img{
     width:100%;
 }
