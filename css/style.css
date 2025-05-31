@@ -77,7 +77,8 @@ main{
 .slide-items img {
 	width:700px;
     height:350px;
-  object-fit: cover;
+    object-fit: cover;
+    margin:0 auto;
 }
 
 .mk_img{
