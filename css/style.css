@@ -21,7 +21,7 @@ h1{
     padding-top:100px;
     text-align:center;
 }
-
+/*
 nav.topNav{
     margin-top:200px;
 }
@@ -44,29 +44,12 @@ nav.topNav ul{
     background-color: #fff;
     padding:5px 10px;
 }
+*/
 
-.circle{
-    width:100px;
-    height:100px;
-    background-color: lightgreen;
-    border-radius: 50px;
-    text-align:center;
-    line-height:100px;
-    margin:0 auto;
-}
-.oval{
-    width:232px;
-    height:78px;
-    background-color: lightblue;
-    border-radius: 50%;
-    text-align:center;
-    line-height:78px;
-    margin:0 auto;
-}
 
 main{
-    width:95%;
-    margin:50px auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 /*カルーセル*/
 .slide-items {
@@ -368,4 +351,23 @@ footer{
     100%{
         background-color: darkgray;
     }
+}
+
+.circle{
+    width:100px;
+    height:100px;
+    background-color: lightgreen;
+    border-radius: 50px;
+    text-align:center;
+    line-height:100px;
+    margin:0 auto;
+}
+.oval{
+    width:232px;
+    height:78px;
+    background-color: lightblue;
+    border-radius: 50%;
+    text-align:center;
+    line-height:78px;
+    margin:0 auto;
 }
