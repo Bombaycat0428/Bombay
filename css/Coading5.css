@@ -5,17 +5,28 @@
     margin:0;
     padding:0;
     list-style: none;
-    background-color:lightblue;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 header{
     padding:32px;
 }
+
+body{
+    margin-left: auto;
+    margin-right: auto;
+}
+img{
+    width:100%;
+    max-width:100%;
+    vertical-align: middle;
+}
+
 .style-logo{
     margin-left: auto;
     margin-right: auto;
     display: block;
+    width:192px;
 }
 .style-nav ul li a{
     text-decoration: none;
@@ -34,9 +45,9 @@ header{
     clear:both;
 }
 
-.hero{
-    background-image:url(images/Coading5/blead.jpg);
-    background-size: cover;
+.hero {
+    background-image: url("../images/Coading5/coffee.jpg")!important;
+    background-size: cover;/* 繰り返し表示を防ぐ */
     padding:20px 20px 50px 20px;
     color:#fff;
     text-align: center;
@@ -45,6 +56,11 @@ h1{
     font-size:40px;
     font: weight 200px;
     margin-bottom:50px;
+}
+h2{
+    font-size:24px;
+    font: weight 200px;
+    margin-bottom:20px;
 }
 h3{
     font-size:16px;
@@ -56,6 +72,11 @@ h4{
     font: weight 200px;
     margin-bottom:20px;
 }
+p{
+    font-size:16px;
+    font: weight 200px;
+    margin-bottom:30px;
+}
 .button{
     border:2px solid #fff;
     padding:8px 20px;
@@ -63,24 +84,68 @@ h4{
     color:#fff;
     text-decoration: none;
 }
+.beige-box{
+    background:#8C8070;
+    color:#fff;
+    padding:60px 30px;
+    text-align: center;
+}
+.brown-box{
+    background:#261C10;
+    color:#fff;
+    padding:60px 30px;
+    text-align: center;
+}
+
+footer{
+    padding:20px 30px;
+    background-color:#BFBDBA;
+}
+.footer_text{
+    font-size:11px;
+    margin-bottom:20px;
+}
+.col{
+    width:100%;
+}
 
 
 /*Tablet View*/
 @media (min-width: 768px){
+    body{
+        max-width:778px;
+    }
     .style-nav ul li{
         display: inline-block;
     }
     .style-nav ul{
         text-align: center;
     }
+    h1{
+    font-size:30px;
+    margin-bottom:90px;
+    }
+    .col-md-half{
+        width:50%;
+    }
+    .col{
+        float:left;
+        padding:0 7px 14px;
+    }
 }
 
 /*Deskyop View*/
 @media (min-width: 1024px){
+    body{
+        max-width:1000px;
+    }
     .style-logo{
         float: left;
     }
     .style-nav{
         float: right;
+    }
+    .col-lg-qtr{
+        width:25%;
     }
 }
