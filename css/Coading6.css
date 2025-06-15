@@ -181,6 +181,9 @@ footer p{
     .main p{
         font-size:30px;
     }
+    .course li a span{
+    font-size:14px;
+    }
 
 }
 
