@@ -54,7 +54,7 @@ nav li a{
     text-shadow:0px 0px 1px rgba(0,0,0,0.5);
 }
 .course li a span{
-    font-size:12px;
+    font-size:10px;
 }
 .course li a:hover{
     color:#04B2D9;
