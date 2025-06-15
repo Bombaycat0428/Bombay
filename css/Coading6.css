@@ -168,6 +168,9 @@ footer p{
     .col-md-4 p{
     margin-bottom: 100px;
     }
+    .course li a span{
+    font-size:12px;
+    }
 }
 /* ------PC向け_xl------- */
 @media only screen and (min-width:1200px){
