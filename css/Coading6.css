@@ -1,0 +1,231 @@
+@charset "utf-8";
+/*======================================
+リセットCSS
+=======================================*/
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family:YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "serif";
+    list-style: none;
+    text-decoration: none;
+}
+
+.box_shadow{
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.8);
+}
+nav li a{
+    color:#000;
+}
+
+/*======================================
+メインイメージ
+======================================*/
+.my-slick{
+	width: 100%; 
+    height: auto;/* Slickのサイズ */
+	margin: auto; 
+	background-color: silver;
+}
+
+/*======================================
+学年別コース
+======================================*/
+.course{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.course li{
+    background-color: #04B2D9;
+    height:30px;
+    text-align: center;
+    line-height: 30px;
+    width:49.5%;
+    margin-bottom:2px;
+    margin-top:10px;
+    border-radius: 10px;
+}
+.course li a{
+    color:#fff;
+    display: block;
+    font-weight:bold;
+    text-decoration: none;
+    text-shadow:0px 0px 1px rgba(0,0,0,0.5);
+}
+.course li a span{
+    font-size:12px;
+}
+.course li a:hover{
+    color:#04B2D9;
+    background-color: #fff;
+    border-radius: 10px;
+    border:2px solid #04B2D9;
+}
+/*======================================
+ピックアップ
+=======================================*/
+#course,#pick_up{
+    width:100%;
+    height:80px;
+    background-color: #04C4D9;
+    border-bottom:10px solid #04B2D9;
+    margin:20px auto;
+}
+#pick_up{
+    background-color: #15BFBF;
+    border-bottom:10px solid #04B2D9;
+}
+#course h2,#pick_up h2{
+    text-align: center;
+    font-size:20px;
+    line-height: 110px;
+    color:#fff;
+    text-shadow: 0px 2px 2px #000;
+}
+
+h3{
+   font-size:18px;
+   margin:10px 0;
+}
+.col-md-4 p{
+    margin-bottom: 50px;
+}
+/*======================================
+ナビゲーション
+======================================*/
+/*header nav{
+    width:100%;
+    background-color:#04B2D9;
+    border-top:5px solid #CEECF2;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    width:1200px;
+    margin: 0 auto;
+}
+
+header nav ul li{
+    width:200px;
+    background-color:#04B2D9;
+    margin-right:2px;
+    text-align: center;
+}
+header nav ul li:first-child{
+	margin-left:2px;
+}
+header nav ul li a{
+    text-align: center;
+    line-height: 50px;
+    color:#fff;
+    text-shadow: 0px 2px 2px #000;
+    font-weight: bold;
+    display: block;
+    font-size:18px;
+}
+header nav ul li a:hover{
+    opacity: 0.5;
+    color:darkblue;
+    text-decoration: none;
+}
+
+header h1{
+    text-align: center;
+}
+
+/*======================================
+フッター
+=======================================*/
+footer{
+    width:100%;
+    background-color: #CEECF2;
+    height:90px;
+    line-height: 90px;
+    text-align: center;
+}
+
+footer p{
+    font-size:14px;
+    background-color: #CEECF2;
+
+}
+
+
+/* ------小型タブレットサイズ以上_md------ */
+@media only screen and (min-width:768px){
+    #course h2,#pick_up h2{
+        font-size:24px;
+    }
+    .main p{
+        font-size:24px;
+    }
+    #course,#pick_up{
+        margin:30px auto;
+    }
+    .col-md-4 p{
+    margin-bottom: 100px;
+    }
+}
+/* ------PC向け_xl------- */
+@media only screen and (min-width:1200px){
+    .container-fluid{
+        width:1200px;
+        margin:0 auto;
+    }
+    .main p{
+        font-size:30px;
+    }
+
+}
+
+/*
+#grade ul{
+    display: flex;
+    width:1200px;
+    margin: 0 auto;
+}
+
+#grade ul li{
+    margin-left:10px;
+}
+
+
+#grade ul li a{
+    display: block;
+    color:#fff;
+    text-shadow: 0px 2px 2px #000;
+    font-weight:bold;
+    text-decoration: none;
+    font-size:14px;
+    text-align: center;
+}
+
+#grade ul li a span{
+    font-size:10px;
+    line-height: 0px;
+    display: grid;
+    place-content:center;
+    place-items:center;
+}
+
+.sample_btn {
+  display: inline-block;
+  width: 200px;
+    height:50px;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  background: linear-gradient(to bottom, #1B85FB, #FB4D8A);
+  background-position: 0% 50%;
+  background-size: 200% auto;
+  transition: all 0.3s ease-out;
+  border-radius: 10px;
+}
+.sample_btn:hover {
+  color: #fff;
+  opacity: 0.8;
+}
+*/
