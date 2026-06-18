@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>世界の猫図鑑 PREMIUM | 9種類の愛らしい猫たち</title>
+    <style>
+        /* ベースのスタイル設定（少しだけプレミアム感をアップ） */
+        :root {
+            --primary-color: #3e2f22; /* より深く、高級感のある茶色 */
+            --accent-color: #d18a45; /* 落ち着いたゴールドベージュ */
+            --bg-color: #f6efe6; /* 柔らかく、温かみのある背景色 */
+            --card-bg: #ffffff;
+            --text-color: #2b2b2b;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.7; /* 読みやすさのために行間を少し広く */
+        }
+
+        /* ヘッダー */
+        header {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            text-align: center;
+            padding: 3rem 1rem; /* 高さを少し出す */
+            background-image: url('https://images.unsplash.com/photo-1494256997604-768d1f608cac?q=80&w=1200&auto=format&fit=crop'); /* ヘッダーにも猫の背景 */
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-color: rgba(0,0,0,0.5); /* 文字を見やすくするためのオーバーレイ */
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.8rem;
+            position: relative; /* オーバーレイより上に */
+            font-weight: 800;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            position: relative; /* オーバーレイより上に */
+        }
+
+        /* メインコンテンツ */
+        main {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 1.5rem;
+        }
+
+        /* グリッドレイアウト（3列） */
+        .cat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+        }
+
+        /* 猫カードのデザイン */
+        .cat-card {
+            background-color: var(--card-bg);
+            border-radius: 16px; /* 角丸を少し大きく */
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cat-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 画像エリア（高画質化と枠線） */
+        .cat-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-bottom: 6px solid var(--accent-color);
+        }
+
+        .cat-info {
+            padding: 2rem;
+            flex-grow: 1;
+        }
+
+        .cat-name {
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            margin-bottom: 0.8rem;
+            border-bottom: 3px solid var(--accent-color);
+            padding-bottom: 0.3rem;
+            display: inline-block;
+            font-weight: 700;
+            max-width: 100%; /* カード幅を超えないようにする */
+            overflow-wrap: break-word; /* 長い名前は折り返す */
+        }
+
+        .cat-meta {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 1.5rem;
+            background-color: #f3ede7;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            display: inline-block;
+        }
+
+        .cat-desc {
+            font-size: 1.05rem;
+            color: #444;
+            line-height: 1.8;
+        }
+
+        /* フッター */
+        footer {
+            text-align: center;
+            padding: 3rem 1rem;
+            font-size: 1rem;
+            color: #ffffff;
+            margin-top: 6rem;
+            background-color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>世界の猫図鑑 PREMIUM</h1>
+        <p>愛らしい猫たち、全9種類の魅力に迫る</p>
+    </header>
+
+    <main>
+        <div class="cat-grid">
+
+            <article class="cat-card">
+                <img src="https://images.unsplash.com/photo-1494256997604-768d1f608cac?q=80&w=800&auto=format&fit=crop" alt="スコティッシュフォールド" class="cat-image">
+                <div class="cat-info">
+                    <h2 class="cat-name">スコティッシュフォールド</h2>
+                    <div class="cat-meta">原産国：スコットランド / 特徴：折れ耳</div>
+                    <p class="cat-desc">折りたたまれた耳が最大の特徴。のんびりとした温和な性格で、運動量も少なめなため、室内で非常に飼いやすい人気の猫種です。</p>
+                </div>
+            </article>
+
+            <article class="cat-card">
+                <img src="https://images.unsplash.com/photo-1548802673-380ab8ebc7b7?q=80&w=800&auto=format&fit=crop" alt="マンチカン" class="cat-image">
+                <div class="cat-info">
+                    <h2 class="cat-name">マンチカン</h2>
+                    <div class="cat-meta">原産国：アメリカ / 特徴：短い足</div>
+                    <p class="cat-desc">短い足でトコトコと歩く姿が愛らしい猫。足は短いですが、非常に活発でジャンプ力もあり、好奇心旺盛で人懐っこい性格です。</p>
+                </div>
+            </article>
+
+            <article class="cat-card">
+                <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?q=80&w=800&auto=format&fit=crop" alt="ラグドール" class="cat-image">
+                <div class="cat-info">
+                    <h2 class="cat-name">ラグドール</h2>
+                    <div class="cat-meta">原産国：アメリカ / 特徴：長毛・青い目</div>
+                    <p class="cat-desc">「ぬいぐるみ」という名前の通り、抱っこされるのが大好きな大型の猫。青い瞳とふわふわの毛並みが美しく、とても従順で落ち着いています。</p>
+                </div>
+            </article>
+
+            <article class="cat-card">
+                <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?q=80&w=800&auto=format&fit=crop" alt="アメリカンショートヘア" class="cat-image">
+                <div class="cat-info">
+                    <h2 class="cat-name">アメリカンショートヘア</h2>
+                    <div class="cat-meta">原産国：アメリカ / 特徴：渦巻き模様</div>
+                    <p class="cat-desc">クラシックタビーと呼ばれる渦巻き模様が特徴。陽気で賢く、環境適応能力も高いため、初心者でも非常に飼いやすい猫です。</p>
+                </div>
+            </article>
+
+            <article class="cat-card">
+                <img src="https://images.unsplash.com/photo-1741882683989-471737318766?q=80&w=800&auto=format&fit=crop" alt="ベンガル" class="cat-image">
+                <div class="cat-info">
+                    <h2 class="cat-name">ベンガル</h2>
+                    <div class="cat-meta">原産国：アメリカ / 特徴：レオパード柄</div>
+                    <p class="cat-desc">ヒョウのような美しい模様を持つ猫。野生的な見た目ですが、性格は大人しく人懐っこいです。運動量が非常に多く、遊ぶのが大好きです。</p>
+                </div>
+            </article>
+
+            <article class="cat-card">
+                <img src="https://images.unsplash.com/photo-1550256519-4125643edab6?q=80&w=800&auto=format&fit=crop" alt="シャム" class="cat-image">
+                <div class="cat-info">
+                    <h2 class="cat-name">シャム（サイアム）</h2>
+                    <div class="cat-meta">原産国：タイ / 特徴：ポインテッドカラー</div>
+                    <p class="cat-desc">顔や耳、足に濃い色がつくポイントカラーとサファイアブルーの目が特徴。とても賢く、おしゃべりで、飼い主に忠実な猫です。</p>
+                </div>
+            </article>
+
+            <article class="cat-card">
+                <img src="https://images.unsplash.com/photo-1572632821054-b1bb7d7010c0?q=80&w=800&auto=format&fit=crop" alt="ノルウェージャンフォレストキャット" class="cat-image">
+                <div class="cat-info">
+                    <h2 class="cat-name">ノルウェージャンフォレストキャット</h2>
+                    <div class="cat-meta">原産国：ノルウェー / 特徴：長毛・大型</div>
+                    <p class="cat-desc">北欧の森で生まれた、ダブルコートの厚い被毛を持つ大型猫。とても賢く、穏やかで我慢強いため、他のペットや子供ともうまくやれます。</p>
+                </div>
+            </article>
+
+            <article class="cat-card">
+                <img src="https://images.unsplash.com/photo-1568627848766-bd2050f16ff5?q=80&w=800&auto=format&fit=crop" alt="メインクーン" class="cat-image">
+                <div class="cat-info">
+                    <h2 class="cat-name">メインクーン</h2>
+                    <div class="cat-meta">原産国：アメリカ / 特徴：最大級・長毛</div>
+                    <p class="cat-desc">「ジェントルジャイアント（穏やかな巨人）」と呼ばれる、イエネコ最大級の猫。とても知性的で人懐っこく、犬のような性格と言われます。</p>
+                </div>
+            </article>
+
+            <article class="cat-card">
+                <img src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?q=80&w=800&auto=format&fit=crop" alt="ロシアンブルー" class="cat-image">
+                <div class="cat-info">
+                    <h2 class="cat-name">ロシアンブルー</h2>
+                    <div class="cat-meta">原産国：ロシア / 特徴：ブルー・エメラルドアイ</div>
+                    <p class="cat-desc">光沢のあるブルー（グレー）の被毛とエメラルドグリーンの目が美しい猫。ボイスレスキャットと呼ばれるほど鳴き声が静かで、大人しいです。</p>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 世界の猫図鑑 PREMIUM. All Images: Unsplash & Jemi.</p>
+    </footer>
+
+</body>
+</html>
